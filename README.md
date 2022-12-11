@@ -15,6 +15,8 @@ and
 
    redir_command_on = "iptables -t nat -A PREROUTING -i %iface -p tcp -d %destination --dpo>
    redir_command_off = "iptables -t nat -D PREROUTING -i %iface -p tcp -d %destination --dp>
+   
+   
 #---------------
  pendant for IPv6 - Note that you need iptables v1.4.16 or newer to use IPv6 redirect
 #---------------
